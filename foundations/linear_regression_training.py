@@ -24,7 +24,7 @@ class Solution:
         N = len(Y)
         for i in range(num_iterations):
             logits = self.get_model_prediction(X, W)
-            print(logits)
+            # print(logits)
             gradient = self.get_derivative(logits, Y, N, X)
             W = W - self.learning_rate * gradient
 
